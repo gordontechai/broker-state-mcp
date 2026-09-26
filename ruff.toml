@@ -1,0 +1,6 @@
+# Deliberate, explicit rule set so local runs and CI agree regardless of any
+# user-level ruff config. E/F = errors, I = import order, B = bugbear, UP = pyupgrade.
+target-version = "py312"
+line-length = 100
+[lint]
+select = ["E", "F", "I", "B", "UP"]
